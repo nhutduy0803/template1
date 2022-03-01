@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header img {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 110vh;
+  background: url("./img/slider.webp") top center / cover no-repeat;
+}
+
+.nav ul li {
+  display: flex;
+  justify-content: space-around;
+  display: inline-block;
+}

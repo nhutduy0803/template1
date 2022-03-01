@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header img {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 110vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./img/slider.webp") top center / cover no-repeat;
+}
+
+.header h3 {
+  position: absolute;
+  top: 45px;
+  right: 100px;
+  color: #fff;
+  font-size: 15px;
+}
+
+.header h2 {
+  color: #fff;
+  top: 40px;
+  position: absolute;
+  left: 50px;
+}
+
+.nav ul li {
+  transition: 0.2s;
+  margin: 0 10px;
+  display: inline-block;
+  color: rgba(221, 221, 221, 0.705);
+}
+
+.nav li:hover {
+  transition: 0.2s;
+  color: #fff;
+}
+
+.nav ul li:nth-child(1) {
+  color: #fff;
+}
+
+.nav {
+  padding-top: 45px;
+  text-align: center;
+}
+
+ul .fa-chevron-down {
+  font-size: 10px;
+}
+
+.nav ul li:nth-child(2) {
+  position: relative;
+  transition: 0.3s;
+  margin: 0 -35px;
+}
+
+.nav ul li:nth-child(2):hover .sub-nav {
+  opacity: 1;
+  bottom: 10px;
+}
+
+.sub-nav {
+  border-radius: 10px;
+  background: #fff;
+  height: 130px;
+  width: 180px;
+  position: absolute;
+  color: #000;
+  opacity: 0;
+  transition: 0.3s;
+  bottom: 0;
+}
+
+.subnav-one {
+  position: relative;
+  height: 150px;
+  width: 180px;
+}
+
+.sub-nav span {
+  padding-right: 70px;
+  padding-top: 20px;
+  display: block;
+}
+
+.sub-nav span:hover {
+  color: #00917c;
+  transition: 0.2s;
+}
+
+.sub-nav span .fa-angle-right {
+  position: absolute;
+  right: 20px;
+}
+
+.sub-nav span:nth-child(3) {
+  position: relative;
+}
+
+.sub-nav span:nth-child(3):hover .sub-nav-two {
+  opacity: 1;
+  margin-top: -25px;
+}
+
+.sub-nav-two {
+  margin-top: 0px;
+  margin-left: 180px;
+  background: #fff;
+  height: 130px;
+  width: 180px;
+  position: absolute;
+  border-radius: 10px;
+  color: #000;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.fa-phone-alt {
+  position: absolute;
+  left: -55px;
+  top: -9px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  padding-top: 13px;
+  color: #fff;
+  transition: 0.2s;
+  font-size: 15px;
+}
+
+.fa-phone-alt:hover {
+  border: 2px solid #fff;
+  transition: 0.2s;
+}
+
+.header p {
+  color: #fff;
+  position: absolute;
+  top: 250px;
+  font-size: 50px;
+}
