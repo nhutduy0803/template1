@@ -293,7 +293,6 @@ html::-webkit-scrollbar {
 .blogg {
   padding-bottom: 50px;
   height: 50px;
-  width: 50px;
 }
 
 .search input {
@@ -311,7 +310,6 @@ html::-webkit-scrollbar {
   visibility: inherit;
   transition: 0.3s;
   top: 40px;
-  color: #000;
 }
 
 .sub-nav-blog span:hover {

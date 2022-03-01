@@ -65,10 +65,9 @@ html::-webkit-scrollbar {
   width: 150px;
   height: 50px;
   background: #2577fd;
-  transition: 0.3s;
 }
 
-/* .shop-now::before {
+.shop-now::before {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -79,11 +78,12 @@ html::-webkit-scrollbar {
   height: 50px;
   background: #00b1ff;
   transition: 0.5s;
-} */
+}
 
-.shop-now:hover {
-  transition: 0.3s;
-  transform: scale(1.1);
+.shop-now:hover::before {
+  width: 150px;
+  transition: 0.5s;
+  border-radius: 20px;
 }
 
 .logo {
@@ -138,10 +138,6 @@ html::-webkit-scrollbar {
 .header a {
   text-decoration: none;
   color: #000;
-}
-
-.header a:hover {
-  color: #f00;
 }
 
 .header {
@@ -225,7 +221,7 @@ html::-webkit-scrollbar {
   position: absolute;
   /* top: 65px; */
   top: 40px;
-  transition: 0.3s;
+  transition: 0.4s;
   display: block;
   visibility: inherit;
 }
@@ -239,7 +235,7 @@ html::-webkit-scrollbar {
   visibility: hidden;
   top: 25px;
   color: #000;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .sub-nav-page span {
@@ -251,7 +247,7 @@ html::-webkit-scrollbar {
   position: absolute;
   top: 110px;
 
-  transition: 0.3s;
+  transition: 0.4s;
 
   opacity: 1;
 }
@@ -264,13 +260,13 @@ html::-webkit-scrollbar {
   border-top: 5px solid #f00;
   visibility: hidden;
   top: 45px;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .latest {
   width: 50px;
   height: 100px;
-  margin-right: 22px;
+  margin-right: 20px;
 }
 
 .latest:hover .sub-nav-latest {
@@ -290,12 +286,6 @@ html::-webkit-scrollbar {
   margin-left: 15px;
 }
 
-.blogg {
-  padding-bottom: 50px;
-  height: 50px;
-  width: 50px;
-}
-
 .search input {
   width: 150px;
   margin-left: 850px;
@@ -307,32 +297,15 @@ html::-webkit-scrollbar {
   padding-left: 20px;
 }
 
-.blogg:hover .sub-nav-blog {
-  visibility: inherit;
-  transition: 0.3s;
-  top: 40px;
-  color: #000;
-}
-
-.sub-nav-blog span:hover {
-  color: #f00;
-}
-
 .sub-nav-blog {
-  position: absolute;
-  top: 25px;
   width: 150px;
   height: auto;
   border-top: 5px solid #f00;
-  background-color: #fff;
-  visibility: hidden;
-  transition: 0.3s;
 }
 
 .sub-nav-blog span {
   display: block;
   line-height: 1.5;
-  margin-left: 15px;
 }
 
 .search .fa-search {

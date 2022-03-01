@@ -65,10 +65,9 @@ html::-webkit-scrollbar {
   width: 150px;
   height: 50px;
   background: #2577fd;
-  transition: 0.3s;
 }
 
-/* .shop-now::before {
+.shop-now::before {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -79,11 +78,12 @@ html::-webkit-scrollbar {
   height: 50px;
   background: #00b1ff;
   transition: 0.5s;
-} */
+}
 
-.shop-now:hover {
-  transition: 0.3s;
-  transform: scale(1.1);
+.shop-now:hover::before {
+  width: 150px;
+  transition: 0.5s;
+  border-radius: 20px;
 }
 
 .logo {
@@ -140,10 +140,6 @@ html::-webkit-scrollbar {
   color: #000;
 }
 
-.header a:hover {
-  color: #f00;
-}
-
 .header {
   z-index: 10;
 }
@@ -168,7 +164,7 @@ html::-webkit-scrollbar {
   color: #000;
 }
 
-/* .sub-nav span:hover {
+.sub-nav span:hover {
   color: #dc3545;
 }
 
@@ -192,6 +188,7 @@ html::-webkit-scrollbar {
   transition: 0.3s;
   box-shadow: 0 10px 15px rgb(25 25 25 / 10%);
 }
+
 .sub-nav2 {
   border-top: 5px solid #dc3545;
   position: absolute;
@@ -203,29 +200,40 @@ html::-webkit-scrollbar {
   opacity: 0;
   transition: 0.3s;
   box-shadow: 0 10px 15px rgb(25 25 25 / 10%);
-} */
+}
 
-/* .header li:nth-child(3):hover .sub-nav {
+.sub-nav3 {
+  border-top: 5px solid #dc3545;
+  position: absolute;
+  top: 70px;
+  /* top: -200px; */
+  left: -300px;
+  background: #fff;
+  width: 180px;
+  height: 280px;
+  opacity: 0;
+  transition: 0.3s;
+  z-index: 10;
+  box-shadow: 0 10px 15px rgb(25 25 25 / 10%);
+}
+
+.header li:nth-child(3):hover .sub-nav {
   position: absolute;
   top: 130px;
   transition: 0.3s;
   opacity: 1;
-} */
+}
 
 .page {
   width: auto;
   height: 40px;
 }
 
-.page span:hover {
-  color: #f00;
-}
-
 .page:hover .sub-nav-page {
   position: absolute;
   /* top: 65px; */
   top: 40px;
-  transition: 0.3s;
+  transition: 0.4s;
   display: block;
   visibility: inherit;
 }
@@ -236,10 +244,10 @@ html::-webkit-scrollbar {
   height: 200px;
   background-color: #fff;
   border-top: 5px solid #f00;
+  /* display: none; */
   visibility: hidden;
   top: 25px;
   color: #000;
-  transition: 0.3s;
 }
 
 .sub-nav-page span {
@@ -252,48 +260,7 @@ html::-webkit-scrollbar {
   top: 110px;
 
   transition: 0.3s;
-
   opacity: 1;
-}
-
-.sub-nav-latest {
-  position: absolute;
-  width: 150px;
-  height: auto;
-  background-color: #fff;
-  border-top: 5px solid #f00;
-  visibility: hidden;
-  top: 45px;
-  transition: 0.3s;
-}
-
-.latest {
-  width: 50px;
-  height: 100px;
-  margin-right: 22px;
-}
-
-.latest:hover .sub-nav-latest {
-  visibility: inherit;
-  top: 60px;
-  transition: 0.3s;
-  color: #000;
-}
-
-.sub-nav-latest span:hover {
-  color: #f00;
-}
-
-.sub-nav-latest span {
-  display: block;
-  line-height: 1.5;
-  margin-left: 15px;
-}
-
-.blogg {
-  padding-bottom: 50px;
-  height: 50px;
-  width: 50px;
 }
 
 .search input {
@@ -305,34 +272,6 @@ html::-webkit-scrollbar {
   border: 1px solid #000;
   height: 45px;
   padding-left: 20px;
-}
-
-.blogg:hover .sub-nav-blog {
-  visibility: inherit;
-  transition: 0.3s;
-  top: 40px;
-  color: #000;
-}
-
-.sub-nav-blog span:hover {
-  color: #f00;
-}
-
-.sub-nav-blog {
-  position: absolute;
-  top: 25px;
-  width: 150px;
-  height: auto;
-  border-top: 5px solid #f00;
-  background-color: #fff;
-  visibility: hidden;
-  transition: 0.3s;
-}
-
-.sub-nav-blog span {
-  display: block;
-  line-height: 1.5;
-  margin-left: 15px;
 }
 
 .search .fa-search {
@@ -1054,7 +993,6 @@ html::-webkit-scrollbar {
 
 .blog {
   display: none;
-  position: relative;
 }
 
 .blog.openblog {
